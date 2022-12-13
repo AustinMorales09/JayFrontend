@@ -150,6 +150,7 @@ class Home extends Component {
     
         </div>
         <div className="famous">
+        {/* small change */}
          
           {/* <ul className="names">
             <li>
