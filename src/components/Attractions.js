@@ -62,7 +62,7 @@ export default class Attractions extends Component {
   }
   componentDidMount() {
     axios
-      .get(BACKEND_URL + "attractions/")
+      .get(BACKEND_URL + "viewattractions/")
       .then((response) => {
         this.setState({
           attractions: response.data
