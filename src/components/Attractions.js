@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-
+import { BACKEND_URL } from "../config";
 const Attraction = (props) => {
   return (
     <div className="allAttractions justify-content-lg-center">
@@ -62,7 +62,7 @@ export default class Attractions extends Component {
   }
   componentDidMount() {
     axios
-      .get("http://localhost:5000/attractions/")
+      .get(BACKEND_URL + "attractions/")
       .then((response) => {
         this.setState({
           attractions: response.data
